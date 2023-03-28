@@ -162,3 +162,6 @@ class ReviewTestCase(APITestCase):
     def test_review_user(self):
         response = self.client.get('/movies/user-reviews/?username=' + self.user.username)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+        
+        
+'''make update to come later'''
